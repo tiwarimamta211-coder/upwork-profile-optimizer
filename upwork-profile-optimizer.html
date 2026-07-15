@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Upwork Profile Optimizer Pro | IncomeAIHub</title>
+<meta name="description" content="AI-powered Upwork profile analyzer & optimizer for Indian freelancers - IncomeAIHub">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+<!-- AdSense placeholder: replace ca-pub-XXXXXXXXXXXXXXXX with real publisher ID -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+
+<style>
+:root{
+  --bg-void:#05060a;
+  --bg-panel:#0b0e17;
+  --bg-panel-2:#0f1320;
+  --grid-line:rgba(0,255,240,0.06);
+  --cyan:#00fff0;
+  --cyan-dim:#0891a8;
+  --purple:#b026ff;
+  --purple-dim:#6b1a9e;
+  --green:#39ff14;
+  --amber:#ffb020;
+  --red:#ff3860;
+  --text-main:#e6f9ff;
+  --text-dim:#7d93a3;
+  --text-faint:#4a5a68;
+  --border-glow:rgba(0,255,240,0.25);
+  --font-head:'Orbitron',sans-serif;
+  --font-body:'Rajdhani',sans-serif;
+  --font-mono:'Share Tech Mono',monospace;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+html{scroll-behavior:smooth;}
+
+body{
+  background:var(--bg-void);
+  color:var(--text-main);
+  font-family:var(--font-body);
+  font-size:16px;
+  line-height:1.5;
+  min-height:100vh;
+  position:relative;
+  overflow-x:hidden;
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size:38px 38px;
+}
+
+body::before{
+  content:'';
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:2;
+  background:repeating-linear-gradient(
+    0deg,
+    rgba(0,255,240,0.025) 0px,
+    rgba(0,255,240,0.025) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  animation:scan 9s linear infinite;
+  opacity:0.5;
+}
+@keyframes scan{0%{background-position:0 0;}100%{background-position:0 100px;}}
+
+body::after{
+  content:'';
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:1;
+  background:radial-gradient(ellipse at 50% -10%, rgba(176,38,255,0.12), transparent 55%),
+              radial-gradient(ellipse at 100% 100%, rgba(0,255,240,0.08), transparent 55%);
+}
+
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px;position:relative;z-index:3;}
+
+/* ===== HEADER ===== */
+header{
+  border-bottom:1px solid var(--border-glow);
+  background:linear-gradient(180deg, rgba(11,14,23,0.95), rgba(11,14,23,0.7));
+  backdrop-filter:blur(6px);
+  position:sticky;top:0;z-index:50;
+}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;max-width:1200px;margin:0 auto;flex-wrap:wrap;gap:10px;}
+.brand{display:flex;align-items:center;gap:12px;}
+.brand-icon{
+  width:42px;height:42px;border-radius:8px;
+  background:linear-gradient(135deg, var(--cyan), var(--purple));
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-head);font-weight:900;color:#020306;font-size:20px;
+  box-shadow:0 0 18px var(--border-glow);
+}
+.brand-text h1{font-family:var(--font-head);font-size:18px;letter-spacing:1px;color:var(--text-main);}
+.brand-text span{font-family:var(--font-mono);font-size:11px;color:var(--cyan);letter-spacing:2px;}
+.tagline{font-family:var(--font-mono);font-size:12px;color:var(--text-dim);}
+
+/* ===== HERO ===== */
+.hero{padding:46px 0 24px;text-align:center;}
+.hero h2{
+  font-family:var(--font-head);
+  font-size:clamp(24px,4.2vw,42px);
+  font-weight:900;
+  letter-spacing:1px;
+  background:linear-gradient(90deg,var(--cyan),var(--purple),var(--green));
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  margin-bottom:12px;
+  text-shadow:0 0 30px rgba(0,255,240,0.15);
+}
+.hero p{color:var(--text-dim);font-size:16px;max-width:680px;margin:0 auto;}
+
+/* ===== AD SLOT ===== */
+.ad-slot{
+  max-width:1200px;margin:20px auto;padding:14px;
+  border:1px dashed var(--border-glow);
+  border-radius:10px;
+  text-align:center;
+  background:rgba(0,255,240,0.02);
+  color:var(--text-faint);
+  font-family:var(--font-mono);
+  font-size:11px;
+  letter-spacing:1px;
+}
+
+/* ===== PANEL / CARD ===== */
+.panel{
+  background:linear-gradient(160deg, var(--bg-panel), var(--bg-panel-2));
+  border:1px solid var(--border-glow);
+  border-radius:14px;
+  padding:26px;
+  margin:22px 0;
+  position:relative;
+  box-shadow:0 0 0 1px rgba(0,0,0,0.4), 0 10px 30px rgba(0,0,0,0.4);
+}
+.panel::before{
+  content:'';position:absolute;top:0;left:20px;right:20px;height:1px;
+  background:linear-gradient(90deg, transparent, var(--cyan), transparent);
+  opacity:0.6;
+}
+.panel-title{
+  font-family:var(--font-head);
+  font-size:15px;
+  letter-spacing:1.5px;
+  color:var(--cyan);
+  margin-bottom:18px;
+  display:flex;align-items:center;gap:10px;
+  text-transform:uppercase;
+}
+.panel-title .num{
+  width:26px;height:26px;border-radius:6px;
+  background:rgba(0,255,240,0.08);border:1px solid var(--border-glow);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-mono);font-size:12px;color:var(--cyan);
+}
+
+/* ===== TABS ===== */
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px;}
+.tab-btn{
+  font-family:var(--font-head);font-size:12px;letter-spacing:1px;
+  padding:11px 18px;border-radius:8px;cursor:pointer;
+  background:rgba(255,255,255,0.02);
+  border:1px solid var(--border-glow);color:var(--text-dim);
+  transition:all .2s;text-transform:uppercase;
+}
+.tab-btn:hover{color:var(--cyan);border-color:var(--cyan);}
+.tab-btn.active{
+  background:linear-gradient(135deg, rgba(0,255,240,0.12), rgba(176,38,255,0.12));
+  color:var(--cyan);border-color:var(--cyan);
+  box-shadow:0 0 16px rgba(0,255,240,0.15);
+}
+.tab-content{display:none;}
+.tab-content.active{display:block;animation:fadein .3s;}
+@keyframes fadein{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:translateY(0);}}
+
+/* ===== FORM ELEMENTS ===== */
+.field{margin-bottom:18px;}
+.field label{
+  display:flex;justify-content:space-between;align-items:center;
+  font-size:13px;color:var(--text-dim);margin-bottom:7px;
+  font-family:var(--font-mono);letter-spacing:0.5px;text-transform:uppercase;
+}
+.field label .hint{color:var(--text-faint);font-size:11px;text-transform:none;}
+input[type="text"],input[type="number"],textarea,select{
+  width:100%;
+  background:rgba(0,0,0,0.35);
+  border:1px solid var(--border-glow);
+  border-radius:8px;
+  padding:12px 14px;
+  color:var(--text-main);
+  font-family:var(--font-body);
+  font-size:15px;
+  transition:all .2s;
+}
+input:focus,textarea:focus,select:focus{
+  outline:none;border-color:var(--cyan);
+  box-shadow:0 0 0 3px rgba(0,255,240,0.1);
+}
+textarea{resize:vertical;min-height:140px;line-height:1.6;}
+select{cursor:pointer;}
+select option{background:var(--bg-panel);}
+.counter{font-family:var(--font-mono);font-size:11px;color:var(--text-faint);}
+.counter.warn{color:var(--amber);}
+.counter.bad{color:var(--red);}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+.grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px;}
+@media(max-width:700px){.grid-2,.grid-3{grid-template-columns:1fr;}}
+
+/* ===== BUTTONS ===== */
+.btn{
+  font-family:var(--font-head);
+  font-size:13px;letter-spacing:1px;
+  padding:14px 26px;border-radius:9px;
+  border:none;cursor:pointer;
+  text-transform:uppercase;
+  transition:all .2s;
+  display:inline-flex;align-items:center;gap:8px;justify-content:center;
+}
+.btn-primary{
+  background:linear-gradient(135deg, var(--cyan), var(--purple));
+  color:#020306;font-weight:700;
+  box-shadow:0 0 20px rgba(0,255,240,0.25);
+}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 4px 24px rgba(0,255,240,0.4);}
+.btn-ghost{
+  background:rgba(255,255,255,0.03);
+  border:1px solid var(--border-glow);
+  color:var(--text-main);
+}
+.btn-ghost:hover{border-color:var(--cyan);color:var(--cyan);}
+.btn-ai{
+  background:linear-gradient(135deg, var(--purple), #6b1a9e);
+  color:#fff;font-weight:700;
+  box-shadow:0 0 18px rgba(176,38,255,0.3);
+}
+.btn-ai:hover{transform:translateY(-2px);}
+.btn-sm{padding:9px 16px;font-size:11px;}
+.btn-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px;}
+.btn:disabled{opacity:0.5;cursor:not-allowed;transform:none;}
+
+/* ===== CHIPS ===== */
+.chip-input-wrap{
+  display:flex;flex-wrap:wrap;gap:8px;
+  background:rgba(0,0,0,0.35);
+  border:1px solid var(--border-glow);
+  border-radius:8px;padding:10px;
+}
+.chip{
+  background:rgba(0,255,240,0.1);
+  border:1px solid var(--cyan-dim);
+  color:var(--cyan);
+  padding:5px 10px;border-radius:20px;
+  font-family:var(--font-mono);font-size:12px;
+  display:flex;align-items:center;gap:6px;
+}
+.chip .x{cursor:pointer;color:var(--text-dim);font-weight:bold;}
+.chip .x:hover{color:var(--red);}
+.chip-input-wrap input{border:none;background:transparent;flex:1;min-width:120px;padding:6px;}
+.chip.missing{background:rgba(255,56,96,0.08);border-color:var(--red);color:var(--red);}
+.chip.trend{background:rgba(57,255,20,0.08);border-color:var(--green);color:var(--green);cursor:pointer;}
+.chip.trend:hover{box-shadow:0 0 10px rgba(57,255,20,0.3);}
+
+/* ===== SCORE GAUGE ===== */
+.score-section{display:flex;gap:34px;flex-wrap:wrap;align-items:center;justify-content:center;padding:10px 0 20px;}
+.gauge-wrap{position:relative;width:200px;height:200px;flex-shrink:0;}
+.gauge-wrap svg{transform:rotate(-90deg);}
+.gauge-center{
+  position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;
+}
+.gauge-center .val{font-family:var(--font-head);font-size:44px;font-weight:900;color:var(--cyan);text-shadow:0 0 20px rgba(0,255,240,0.4);}
+.gauge-center .lbl{font-family:var(--font-mono);font-size:11px;color:var(--text-dim);letter-spacing:2px;margin-top:2px;}
+
+.breakdown{flex:1;min-width:280px;display:flex;flex-direction:column;gap:14px;}
+.bar-item{}
+.bar-item .bar-head{display:flex;justify-content:space-between;font-size:13px;margin-bottom:6px;font-family:var(--font-mono);}
+.bar-item .bar-head .bname{color:var(--text-main);}
+.bar-track{height:9px;background:rgba(255,255,255,0.06);border-radius:6px;overflow:hidden;}
+.bar-fill{height:100%;border-radius:6px;transition:width 1s ease;background:linear-gradient(90deg,var(--purple),var(--cyan));}
+
+/* ===== SUGGESTIONS ===== */
+.suggestion{
+  display:flex;gap:12px;padding:14px 16px;border-radius:10px;margin-bottom:10px;
+  border:1px solid var(--border-glow);background:rgba(255,255,255,0.02);
+  align-items:flex-start;
+}
+.suggestion .icon{font-size:18px;flex-shrink:0;line-height:1.4;}
+.suggestion.good{border-color:rgba(57,255,20,0.3);background:rgba(57,255,20,0.04);}
+.suggestion.warn{border-color:rgba(255,176,32,0.3);background:rgba(255,176,32,0.04);}
+.suggestion.bad{border-color:rgba(255,56,96,0.3);background:rgba(255,56,96,0.04);}
+.suggestion .txt strong{display:block;font-size:14px;margin-bottom:2px;}
+.suggestion .txt p{font-size:13px;color:var(--text-dim);}
+
+/* ===== RATE BENCHMARK ===== */
+.rate-scale{position:relative;height:52px;margin-top:20px;}
+.rate-track{
+  position:absolute;top:20px;left:0;right:0;height:10px;border-radius:6px;
+  background:linear-gradient(90deg, var(--red), var(--amber), var(--green), var(--cyan));
+}
+.rate-marker{
+  position:absolute;top:6px;width:2px;height:38px;background:#fff;
+  box-shadow:0 0 10px #fff;
+}
+.rate-marker::after{
+  content:attr(data-label);
+  position:absolute;top:-22px;left:50%;transform:translateX(-50%);
+  font-family:var(--font-mono);font-size:11px;color:var(--text-main);white-space:nowrap;
+}
+.rate-labels{display:flex;justify-content:space-between;margin-top:8px;font-family:var(--font-mono);font-size:11px;color:var(--text-faint);}
+
+/* ===== HISTORY TABLE ===== */
+.history-table{width:100%;border-collapse:collapse;font-size:13px;}
+.history-table th{text-align:left;padding:10px;color:var(--cyan);font-family:var(--font-mono);font-size:11px;text-transform:uppercase;border-bottom:1px solid var(--border-glow);}
+.history-table td{padding:10px;border-bottom:1px solid rgba(255,255,255,0.05);color:var(--text-dim);}
+.history-table tr:hover td{color:var(--text-main);}
+.history-table .del{color:var(--red);cursor:pointer;font-size:12px;}
+
+/* ===== AI RESULT BOX ===== */
+.ai-box{
+  background:linear-gradient(160deg, rgba(176,38,255,0.06), rgba(0,255,240,0.03));
+  border:1px solid var(--purple-dim);
+  border-radius:12px;padding:20px;margin-top:16px;
+  white-space:pre-wrap;font-size:14px;line-height:1.7;
+}
+.ai-box h4{color:var(--purple);font-family:var(--font-head);font-size:13px;margin-bottom:8px;letter-spacing:1px;}
+.loader{
+  display:inline-block;width:16px;height:16px;border:2px solid rgba(255,255,255,0.2);
+  border-top-color:var(--cyan);border-radius:50%;animation:spin .7s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg);}}
+
+/* ===== TOGGLE ===== */
+.toggle-row{display:flex;align-items:center;gap:10px;margin-bottom:16px;flex-wrap:wrap;}
+.toggle-switch{position:relative;width:46px;height:24px;}
+.toggle-switch input{opacity:0;width:0;height:0;}
+.toggle-slider{position:absolute;inset:0;background:rgba(255,255,255,0.1);border-radius:24px;cursor:pointer;transition:.2s;border:1px solid var(--border-glow);}
+.toggle-slider::before{content:'';position:absolute;width:18px;height:18px;left:2px;top:2px;background:var(--text-dim);border-radius:50%;transition:.2s;}
+.toggle-switch input:checked + .toggle-slider{background:rgba(176,38,255,0.3);border-color:var(--purple);}
+.toggle-switch input:checked + .toggle-slider::before{transform:translateX(22px);background:var(--purple);}
+.toggle-label{font-family:var(--font-mono);font-size:12px;color:var(--text-dim);}
+
+/* ===== BADGE ===== */
+.badge{
+  display:inline-block;padding:3px 10px;border-radius:20px;
+  font-family:var(--font-mono);font-size:10px;letter-spacing:1px;text-transform:uppercase;
+}
+.badge-premium{background:rgba(176,38,255,0.15);color:var(--purple);border:1px solid var(--purple-dim);}
+.badge-free{background:rgba(57,255,20,0.1);color:var(--green);border:1px solid rgba(57,255,20,0.3);}
+
+/* ===== TITLE SUGGESTIONS ===== */
+.title-card{
+  background:rgba(0,0,0,0.3);border:1px solid var(--border-glow);border-radius:10px;
+  padding:14px 16px;margin-bottom:10px;display:flex;justify-content:space-between;align-items:center;gap:12px;
+}
+.title-card p{font-size:14px;color:var(--text-main);}
+.title-card .copy-btn{flex-shrink:0;}
+
+/* ===== HINDI GUIDE ===== */
+.guide-box{
+  background:rgba(0,255,240,0.03);
+  border:1px solid var(--border-glow);
+  border-radius:12px;padding:22px;
+}
+.guide-box h3{font-family:var(--font-head);color:var(--green);font-size:16px;margin-bottom:14px;letter-spacing:1px;}
+.guide-step{display:flex;gap:12px;margin-bottom:14px;}
+.guide-step .step-num{
+  width:28px;height:28px;border-radius:50%;flex-shrink:0;
+  background:rgba(57,255,20,0.1);border:1px solid var(--green);color:var(--green);
+  display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:13px;
+}
+.guide-step p{color:var(--text-dim);font-size:15px;line-height:1.6;}
+.guide-step strong{color:var(--text-main);}
+
+/* ===== FOOTER ===== */
+footer{margin-top:50px;padding:30px 0;border-top:1px solid var(--border-glow);text-align:center;}
+footer p{color:var(--text-faint);font-family:var(--font-mono);font-size:12px;}
+footer .brandline{color:var(--cyan);}
+
+::-webkit-scrollbar{width:9px;}
+::-webkit-scrollbar-track{background:var(--bg-void);}
+::-webkit-scrollbar-thumb{background:var(--cyan-dim);border-radius:4px;}
+
+.toast{
+  position:fixed;bottom:24px;right:24px;z-index:999;
+  background:var(--bg-panel);border:1px solid var(--cyan);color:var(--cyan);
+  padding:12px 20px;border-radius:8px;font-family:var(--font-mono);font-size:13px;
+  box-shadow:0 0 20px rgba(0,255,240,0.3);
+  transform:translateY(100px);opacity:0;transition:.3s;
+}
+.toast.show{transform:translateY(0);opacity:1;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="brand">
+      <div class="brand-icon">UO</div>
+      <div class="brand-text">
+        <h1>Upwork Profile Optimizer <span style="color:var(--purple)">PRO</span></h1>
+        <span>INCOMEAIHUB.IN</span>
+      </div>
+    </div>
+    <div class="tagline">🇮🇳 Freelancers ke liye AI-powered profile analyzer</div>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <h2>UPWORK PROFILE OPTIMIZER</h2>
+    <p>Apna Upwork profile analyze karo, score paao, aur AI-powered suggestions se apni profile ko client-magnet banao. Title, overview, skills, aur rate — sab kuch optimize karo ek jagah.</p>
+  </div>
+</div>
+
+<div class="ad-slot wrap">📢 AD SLOT — TOP BANNER (728x90) — ca-pub-XXXXXXXXXXXXXXXX</div>
+
+<div class="wrap">
+
+  <!-- ============ INPUT PANEL ============ -->
+  <div class="panel">
+    <div class="panel-title"><span class="num">1</span> APNI PROFILE DETAILS DAALO</div>
+
+    <div class="grid-2">
+      <div class="field">
+        <label>Category / Niche <span class="hint">(analysis ke liye zaroori)</span></label>
+        <select id="category">
+          <option value="webdev">Web Development</option>
+          <option value="design">Graphic Design</option>
+          <option value="writing">Content Writing</option>
+          <option value="marketing">Digital Marketing</option>
+          <option value="va">Virtual Assistant</option>
+          <option value="dataentry">Data Entry</option>
+          <option value="video">Video Editing</option>
+          <option value="social">Social Media Management</option>
+          <option value="wordpress">WordPress Development</option>
+          <option value="seo">SEO</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Experience Level</label>
+        <select id="experience">
+          <option value="entry">Entry Level (0-1 yrs)</option>
+          <option value="intermediate" selected>Intermediate (1-4 yrs)</option>
+          <option value="expert">Expert (5+ yrs)</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="field">
+      <label>Profile Title <span class="counter" id="titleCounter">0 / 70</span></label>
+      <input type="text" id="profileTitle" placeholder="e.g. Full Stack Developer | React, Node.js & MongoDB Expert" maxlength="70">
+    </div>
+
+    <div class="field">
+      <label>Professional Overview <span class="counter" id="overviewCounter">0 / 5000</span></label>
+      <textarea id="profileOverview" placeholder="Apna overview yahan paste karo... (client ko kya problem solve karte ho, kitna experience hai, kya results diye hain, etc.)"></textarea>
+    </div>
+
+    <div class="field">
+      <label>Skills <span class="hint">(Enter dabao har skill ke baad)</span></label>
+      <div class="chip-input-wrap" id="chipWrap">
+        <input type="text" id="skillInput" placeholder="Skill type karo aur Enter dabao...">
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="field">
+        <label>Hourly Rate (₹/hour)</label>
+        <input type="number" id="hourlyRate" placeholder="e.g. 800" min="0">
+      </div>
+      <div class="field">
+        <label>Output Language <span class="hint">(suggestions ke liye)</span></label>
+        <select id="outputLang">
+          <option value="hinglish" selected>Hinglish</option>
+          <option value="hindi">हिंदी</option>
+          <option value="english">English</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="btn-row">
+      <button class="btn btn-primary" onclick="runAnalysis()">⚡ ANALYZE PROFILE</button>
+      <button class="btn btn-ghost" onclick="saveDraft()">💾 SAVE DRAFT</button>
+      <button class="btn btn-ghost" onclick="loadDraft()">📂 LOAD DRAFT</button>
+      <button class="btn btn-ghost" onclick="exportProfile()">⬇️ EXPORT TXT</button>
+    </div>
+  </div>
+
+  <!-- ============ RESULTS PANEL ============ -->
+  <div class="panel" id="resultsPanel" style="display:none;">
+    <div class="panel-title"><span class="num">2</span> PROFILE SCORE & BREAKDOWN</div>
+    <div class="score-section">
+      <div class="gauge-wrap">
+        <svg width="200" height="200" viewBox="0 0 200 200">
+          <circle cx="100" cy="100" r="88" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="14"/>
+          <circle id="gaugeCircle" cx="100" cy="100" r="88" fill="none" stroke="url(#gaugeGrad)" stroke-width="14" stroke-linecap="round" stroke-dasharray="553" stroke-dashoffset="553"/>
+          <defs>
+            <linearGradient id="gaugeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#b026ff"/>
+              <stop offset="100%" stop-color="#00fff0"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <div class="gauge-center">
+          <div class="val" id="overallScoreVal">0</div>
+          <div class="lbl">OVERALL SCORE</div>
+        </div>
+      </div>
+      <div class="breakdown" id="breakdownBars"></div>
+    </div>
+  </div>
+
+  <!-- ============ SUGGESTIONS PANEL ============ -->
+  <div class="panel" id="suggestionsPanel" style="display:none;">
+    <div class="panel-title"><span class="num">3</span> DETAILED SUGGESTIONS <span class="badge badge-free">RULE-BASED · FREE</span></div>
+    <div id="suggestionsList"></div>
+  </div>
+
+  <!-- ============ AI DEEP ANALYSIS ============ -->
+  <div class="panel" id="aiPanel" style="display:none;">
+    <div class="panel-title"><span class="num">4</span> AI DEEP ANALYSIS <span class="badge badge-premium">PREMIUM · CLAUDE AI</span></div>
+    <p style="color:var(--text-dim);font-size:14px;margin-bottom:14px;">Claude AI se apni title & overview ka personalized rewrite aur deep suggestions paao.</p>
+    <button class="btn btn-ai" id="aiAnalyzeBtn" onclick="runAIAnalysis()">🤖 GET AI SUGGESTIONS</button>
+    <div id="aiResultBox"></div>
+  </div>
+
+  <div class="ad-slot">📢 AD SLOT — MID CONTENT (300x250) — ca-pub-XXXXXXXXXXXXXXXX</div>
+
+  <!-- ============ TABS: TITLE GEN / SKILLS GAP / RATE BENCHMARK ============ -->
+  <div class="panel">
+    <div class="panel-title"><span class="num">5</span> OPTIMIZATION TOOLS</div>
+    <div class="tabs">
+      <div class="tab-btn active" data-tab="titlegen" onclick="switchTab('titlegen')">✍️ Title Generator</div>
+      <div class="tab-btn" data-tab="skillsgap" onclick="switchTab('skillsgap')">🎯 Skills Gap</div>
+      <div class="tab-btn" data-tab="ratebench" onclick="switchTab('ratebench')">💰 Rate Benchmark</div>
+      <div class="tab-btn" data-tab="history" onclick="switchTab('history')">🕓 History</div>
+    </div>
+
+    <div class="tab-content active" id="tab-titlegen">
+      <div class="toggle-row">
+        <label class="toggle-switch"><input type="checkbox" id="titleAiToggle"><span class="toggle-slider"></span></label>
+        <span class="toggle-label">AI Mode (Claude se creative titles) — off = rule-based free titles</span>
+      </div>
+      <button class="btn btn-primary btn-sm" onclick="generateTitles()">Generate 5 Title Suggestions</button>
+      <div id="titleSuggestions" style="margin-top:16px;"></div>
+    </div>
+
+    <div class="tab-content" id="tab-skillsgap">
+      <p style="color:var(--text-dim);font-size:14px;margin-bottom:14px;">Apni category ke top in-demand skills dekho aur missing skills identify karo.</p>
+      <div id="skillsGapResult"></div>
+    </div>
+
+    <div class="tab-content" id="tab-ratebench">
+      <p style="color:var(--text-dim);font-size:14px;margin-bottom:6px;">Tumhari category & experience level ke hisaab se rate positioning:</p>
+      <div id="rateBenchResult"></div>
+    </div>
+
+    <div class="tab-content" id="tab-history">
+      <table class="history-table" id="historyTable">
+        <thead><tr><th>Date</th><th>Title</th><th>Category</th><th>Score</th><th></th></tr></thead>
+        <tbody id="historyBody"></tbody>
+      </table>
+      <p id="historyEmpty" style="color:var(--text-faint);font-size:13px;margin-top:10px;">Abhi tak koi analysis history nahi hai.</p>
+    </div>
+  </div>
+
+  <!-- ============ HINDI USAGE GUIDE ============ -->
+  <div class="panel guide-box">
+    <h3>📘 इस्तेमाल कैसे करें — Hindi Guide</h3>
+    <div class="guide-step">
+      <div class="step-num">1</div>
+      <p><strong>Category & Experience चुनें</strong> — सबसे पहले अपनी freelancing category (जैसे Web Development, Content Writing) और experience level select करें। यह सारे analysis का base होता है।</p>
+    </div>
+    <div class="guide-step">
+      <div class="step-num">2</div>
+      <p><strong>Profile Title और Overview डालें</strong> — अपना मौजूदा Upwork title और overview copy-paste करें। Skills भी एक-एक करके Enter दबाकर add करें।</p>
+    </div>
+    <div class="guide-step">
+      <div class="step-num">3</div>
+      <p><strong>"Analyze Profile" पर क्लिक करें</strong> — आपको एक overall score (0-100) मिलेगा जिसमें Title Strength, Overview Quality, Skills Coverage, Rate Positioning और Keyword Optimization का breakdown दिखेगा।</p>
+    </div>
+    <div class="guide-step">
+      <div class="step-num">4</div>
+      <p><strong>Suggestions पढ़ें और लागू करें</strong> — हरे suggestions अच्छे हैं, पीले में सुधार की गुंजाइश है, और लाल वाले तुरंत ठीक करने चाहिए।</p>
+    </div>
+    <div class="guide-step">
+      <div class="step-num">5</div>
+      <p><strong>AI Deep Analysis (Premium)</strong> — "Get AI Suggestions" बटन दबाकर Claude AI से अपनी title और overview का personalized rewrite पाएं — ज़्यादा गहराई वाले suggestions के लिए।</p>
+    </div>
+    <div class="guide-step">
+      <div class="step-num">6</div>
+      <p><strong>Title Generator, Skills Gap & Rate Benchmark</strong> — नीचे दिए tabs में जाकर नए title suggestions पाएं, missing skills पहचानें, और अपनी rate को market के हिसाब से check करें।</p>
+    </div>
+    <div class="guide-step">
+      <div class="step-num">7</div>
+      <p><strong>Save / Export</strong> — "Save Draft" से अपनी profile browser में save करें (LocalStorage में), और "Export TXT" से पूरी optimized profile डाउनलोड करें।</p>
+    </div>
+  </div>
+
+  <div class="ad-slot">📢 AD SLOT — BOTTOM (728x90) — ca-pub-XXXXXXXXXXXXXXXX</div>
+
+</div>
+
+<footer>
+  <p>© 2026 <span class="brandline">IncomeAIHub</span> — Upwork Profile Optimizer Pro | Made for Indian Freelancers 🇮🇳</p>
+  <p style="margin-top:6px;">Yeh tool Upwork ka official product nahi hai. Independent optimization assistant hai.</p>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* ============================================================
+   UPWORK PROFILE OPTIMIZER PRO — IncomeAIHub
+   ============================================================ */
+
+// ---------- CATEGORY DATABASE ----------
+const CATEGORY_DATA = {
+  webdev: {
+    label: "Web Development",
+    keywords: ["react","node.js","javascript","full stack","api","frontend","backend","html","css","mongodb","typescript","website development","web application"],
+    trendingSkills: ["React","Node.js","JavaScript","TypeScript","MongoDB","REST API","Next.js","Tailwind CSS","Git","AWS","PostgreSQL","Docker"],
+    rate: {entry:[300,600], intermediate:[600,1500], expert:[1500,4000]}
+  },
+  design: {
+    label: "Graphic Design",
+    keywords: ["photoshop","illustrator","branding","logo design","figma","ui design","canva","adobe","typography","visual identity"],
+    trendingSkills: ["Adobe Photoshop","Illustrator","Figma","Branding","Logo Design","UI Design","Canva","Typography","Adobe XD","Print Design"],
+    rate: {entry:[250,500], intermediate:[500,1200], expert:[1200,3000]}
+  },
+  writing: {
+    label: "Content Writing",
+    keywords: ["seo writing","blog","copywriting","content strategy","article writing","ghostwriting","proofreading","research"],
+    trendingSkills: ["SEO Writing","Copywriting","Blog Writing","Content Strategy","Ghostwriting","Proofreading","Technical Writing","Email Copywriting"],
+    rate: {entry:[200,450], intermediate:[450,1000], expert:[1000,2500]}
+  },
+  marketing: {
+    label: "Digital Marketing",
+    keywords: ["google ads","facebook ads","ppc","conversion rate","analytics","email marketing","growth marketing","funnel"],
+    trendingSkills: ["Google Ads","Meta Ads","PPC","Email Marketing","Analytics","Conversion Optimization","Marketing Funnels","HubSpot"],
+    rate: {entry:[300,600], intermediate:[600,1400], expert:[1400,3500]}
+  },
+  va: {
+    label: "Virtual Assistant",
+    keywords: ["admin support","calendar management","email management","customer support","data entry","scheduling","research"],
+    trendingSkills: ["Calendar Management","Email Management","Customer Support","Data Entry","Research","CRM","Scheduling","Notion"],
+    rate: {entry:[150,350], intermediate:[350,700], expert:[700,1500]}
+  },
+  dataentry: {
+    label: "Data Entry",
+    keywords: ["excel","data processing","typing","data cleaning","spreadsheet","accuracy","google sheets"],
+    trendingSkills: ["Excel","Google Sheets","Data Cleaning","Typing Speed","Data Processing","Attention to Detail","VLOOKUP"],
+    rate: {entry:[100,250], intermediate:[250,500], expert:[500,1000]}
+  },
+  video: {
+    label: "Video Editing",
+    keywords: ["premiere pro","after effects","davinci resolve","motion graphics","color grading","youtube editing","reels"],
+    trendingSkills: ["Premiere Pro","After Effects","DaVinci Resolve","Motion Graphics","Color Grading","YouTube Editing","Reels Editing"],
+    rate: {entry:[250,500], intermediate:[500,1200], expert:[1200,3000]}
+  },
+  social: {
+    label: "Social Media Management",
+    keywords: ["instagram","content calendar","community management","social strategy","engagement","hashtag research"],
+    trendingSkills: ["Instagram Growth","Content Calendar","Community Management","Canva","Social Strategy","Analytics","Reels Strategy"],
+    rate: {entry:[200,450], intermediate:[450,1000], expert:[1000,2200]}
+  },
+  wordpress: {
+    label: "WordPress Development",
+    keywords: ["wordpress","elementor","woocommerce","php","custom theme","plugin development","divi"],
+    trendingSkills: ["WordPress","Elementor","WooCommerce","PHP","Custom Themes","Plugin Development","Divi","Speed Optimization"],
+    rate: {entry:[300,600], intermediate:[600,1400], expert:[1400,3200]}
+  },
+  seo: {
+    label: "SEO",
+    keywords: ["keyword research","on-page seo","link building","technical seo","seo audit","google search console","semrush"],
+    trendingSkills: ["Keyword Research","On-Page SEO","Link Building","Technical SEO","SEMrush","Ahrefs","Google Search Console","SEO Audits"],
+    rate: {entry:[300,600], intermediate:[600,1300], expert:[1300,3000]}
+  }
+};
+
+// ---------- STATE ----------
+let skills = [];
+let lastAnalysis = null;
+
+// ---------- COUNTERS ----------
+const titleEl = document.getElementById('profileTitle');
+const overviewEl = document.getElementById('profileOverview');
+const titleCounter = document.getElementById('titleCounter');
+const overviewCounter = document.getElementById('overviewCounter');
+
+titleEl.addEventListener('input', ()=>{
+  const len = titleEl.value.length;
+  titleCounter.textContent = `${len} / 70`;
+  titleCounter.className = 'counter' + (len>70?' bad': len>60?' warn':'');
+});
+overviewEl.addEventListener('input', ()=>{
+  const len = overviewEl.value.length;
+  overviewCounter.textContent = `${len} / 5000`;
+  overviewCounter.className = 'counter' + (len>5000?' bad': len<300?' warn':'');
+});
+
+// ---------- SKILLS CHIP INPUT ----------
+const skillInput = document.getElementById('skillInput');
+const chipWrap = document.getElementById('chipWrap');
+
+skillInput.addEventListener('keydown', (e)=>{
+  if(e.key === 'Enter' && skillInput.value.trim()){
+    e.preventDefault();
+    addSkill(skillInput.value.trim());
+    skillInput.value = '';
+  }
+});
+
+function addSkill(name){
+  if(skills.find(s=>s.toLowerCase()===name.toLowerCase())) return;
+  skills.push(name);
+  renderChips();
+}
+function removeSkill(name){
+  skills = skills.filter(s=>s!==name);
+  renderChips();
+}
+function renderChips(){
+  chipWrap.querySelectorAll('.chip').forEach(c=>c.remove());
+  skills.forEach(s=>{
+    const chip = document.createElement('div');
+    chip.className='chip';
+    chip.innerHTML = `${escapeHtml(s)} <span class="x" onclick="removeSkill('${escapeHtml(s).replace(/'/g,"\\'")}')">✕</span>`;
+    chipWrap.insertBefore(chip, skillInput);
+  });
+}
+
+function escapeHtml(str){
+  const d = document.createElement('div');
+  d.textContent = str;
+  return d.innerHTML;
+}
+
+// ---------- TABS ----------
+function switchTab(name){
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.toggle('active', b.dataset.tab===name));
+  document.querySelectorAll('.tab-content').forEach(c=>c.classList.toggle('active', c.id==='tab-'+name));
+  if(name==='skillsgap') renderSkillsGap();
+  if(name==='ratebench') renderRateBenchmark();
+  if(name==='history') renderHistory();
+}
+
+// ---------- SCORING ENGINE (rule-based) ----------
+function scoreTitle(title, cat){
+  let score = 0;
+  const len = title.length;
+  if(len===0) return 0;
+  if(len>=45 && len<=70) score += 35; else if(len>=25) score += 20; else score += 8;
+  const lower = title.toLowerCase();
+  const kwHits = cat.keywords.filter(k=>lower.includes(k)).length;
+  score += Math.min(kwHits*10, 30);
+  const valueWords = ['expert','certified','specialist','years','experienced','top rated','professional'];
+  if(valueWords.some(w=>lower.includes(w))) score += 15;
+  if(/[|•]/.test(title)) score += 10;
+  const genericWords = ['freelancer','hard worker','looking for work'];
+  if(genericWords.some(w=>lower.includes(w))) score -= 20;
+  return Math.max(0, Math.min(100, score+10));
+}
+
+function scoreOverview(text, cat){
+  if(!text || text.trim().length===0) return 0;
+  let score = 0;
+  const len = text.length;
+  if(len>=800 && len<=2500) score += 30; else if(len>=300) score += 18; else score += 5;
+  const lower = text.toLowerCase();
+  const kwHits = cat.keywords.filter(k=>lower.includes(k)).length;
+  score += Math.min(kwHits*6, 24);
+  if(/\d+%|\d+\+|\$\d|₹\d|\d+ years|\d+ projects|\d+ clients/.test(lower)) score += 16;
+  const sentences = text.split(/[.!?]/).filter(s=>s.trim().length>10);
+  if(sentences.length>=5) score += 10;
+  const ctaWords = ['let\'s talk','contact me','message me','reach out','get in touch','let us discuss'];
+  if(ctaWords.some(w=>lower.includes(w))) score += 10;
+  const paragraphs = text.split(/\n+/).filter(p=>p.trim().length>0);
+  if(paragraphs.length>=2) score += 10;
+  return Math.max(0, Math.min(100, score));
+}
+
+function scoreSkills(skillsArr, cat){
+  if(skillsArr.length===0) return 0;
+  let score = 0;
+  const countScore = skillsArr.length>=10 ? 40 : skillsArr.length>=6 ? 28 : skillsArr.length>=3 ? 15 : 6;
+  score += countScore;
+  const lowerSkills = skillsArr.map(s=>s.toLowerCase());
+  const trendMatches = cat.trendingSkills.filter(ts=> lowerSkills.some(s=> s.includes(ts.toLowerCase()) || ts.toLowerCase().includes(s)) ).length;
+  score += Math.min((trendMatches / cat.trendingSkills.length) * 60, 60);
+  return Math.max(0, Math.min(100, Math.round(score)));
+}
+
+function scoreRate(rate, cat, exp){
+  if(!rate || rate<=0) return 0;
+  const [lo,hi] = cat.rate[exp];
+  if(rate>=lo && rate<=hi) return 100;
+  if(rate<lo){
+    const diff = (lo-rate)/lo;
+    return Math.max(20, Math.round(100 - diff*140));
+  } else {
+    const diff = (rate-hi)/hi;
+    return Math.max(25, Math.round(100 - diff*90));
+  }
+}
+
+function scoreKeywords(title, overview, cat){
+  const combined = (title+' '+overview).toLowerCase();
+  const hits = cat.keywords.filter(k=>combined.includes(k)).length;
+  return Math.min(100, Math.round((hits/cat.keywords.length)*130));
+}
+
+function computeAllScores(){
+  const catKey = document.getElementById('category').value;
+  const cat = CATEGORY_DATA[catKey];
+  const exp = document.getElementById('experience').value;
+  const title = titleEl.value.trim();
+  const overview = overviewEl.value.trim();
+  const rate = parseFloat(document.getElementById('hourlyRate').value) || 0;
+
+  const s = {
+    title: scoreTitle(title, cat),
+    overview: scoreOverview(overview, cat),
+    skills: scoreSkills(skills, cat),
+    rate: scoreRate(rate, cat, exp),
+    keywords: scoreKeywords(title, overview, cat)
+  };
+  const overall = Math.round(s.title*0.25 + s.overview*0.30 + s.skills*0.20 + s.rate*0.10 + s.keywords*0.15);
+  return {catKey, cat, exp, title, overview, rate, scores:s, overall};
+}
+
+// ---------- ANALYSIS RUN ----------
+function runAnalysis(){
+  if(!titleEl.value.trim() && !overviewEl.value.trim()){
+    showToast('⚠️ Kam se kam Title ya Overview to bharo!');
+    return;
+  }
+  const result = computeAllScores();
+  lastAnalysis = result;
+
+  document.getElementById('resultsPanel').style.display='block';
+  document.getElementById('suggestionsPanel').style.display='block';
+  document.getElementById('aiPanel').style.display='block';
+
+  animateGauge(result.overall);
+  renderBreakdown(result.scores);
+  renderSuggestions(result);
+  saveToHistory(result);
+
+  document.getElementById('resultsPanel').scrollIntoView({behavior:'smooth', block:'start'});
+}
+
+function animateGauge(score){
+  const circle = document.getElementById('gaugeCircle');
+  const circumference = 2*Math.PI*88;
+  const offset = circumference - (score/100)*circumference;
+  circle.style.strokeDasharray = circumference;
+  setTimeout(()=>{ circle.style.transition='stroke-dashoffset 1.2s ease'; circle.style.strokeDashoffset = offset; }, 100);
+
+  let cur = 0;
+  const valEl = document.getElementById('overallScoreVal');
+  const step = setInterval(()=>{
+    cur += 2;
+    if(cur>=score){cur=score; clearInterval(step);}
+    valEl.textContent = cur;
+    valEl.style.color = score>=70?'var(--green)': score>=45?'var(--amber)':'var(--red)';
+  }, 20);
+}
+
+function renderBreakdown(scores){
+  const labels = {title:'Title Strength', overview:'Overview Quality', skills:'Skills Coverage', rate:'Rate Positioning', keywords:'Keyword Optimization'};
+  const box = document.getElementById('breakdownBars');
+  box.innerHTML = '';
+  Object.keys(labels).forEach(key=>{
+    const val = scores[key];
+    const color = val>=70?'linear-gradient(90deg,#39ff14,#00fff0)': val>=45?'linear-gradient(90deg,#ffb020,#ff7a20)':'linear-gradient(90deg,#ff3860,#ff6090)';
+    const div = document.createElement('div');
+    div.className='bar-item';
+    div.innerHTML = `
+      <div class="bar-head"><span class="bname">${labels[key]}</span><span>${val}/100</span></div>
+      <div class="bar-track"><div class="bar-fill" style="width:0%;background:${color}"></div></div>
+    `;
+    box.appendChild(div);
+    setTimeout(()=>{ div.querySelector('.bar-fill').style.width = val+'%'; }, 150);
+  });
+}
+
+function renderSuggestions(result){
+  const {cat, scores, title, overview, rate, exp} = result;
+  const list = [];
+
+  // Title suggestions
+  if(scores.title>=70) list.push({level:'good', title:'Title strong hai ✅', text:'Aapka title length aur keywords ke hisaab se achha optimized hai.'});
+  else {
+    if(title.length<45) list.push({level:'warn', title:'Title bahut chhota hai', text:`Sirf ${title.length} characters hai. 45-70 characters ka title zyada keywords aur value capture karta hai.`});
+    if(!cat.keywords.some(k=>title.toLowerCase().includes(k))) list.push({level:'bad', title:'Category keywords missing', text:`Title mein "${cat.label}" se related koi keyword nahi mila (jaise: ${cat.keywords.slice(0,3).join(', ')}).`});
+  }
+
+  // Overview suggestions
+  if(scores.overview>=70) list.push({level:'good', title:'Overview well-structured hai ✅', text:'Length, keywords aur structure sahi hai.'});
+  else {
+    if(overview.length<300) list.push({level:'bad', title:'Overview bahut chhota hai', text:`Sirf ${overview.length} characters hai. Kam se kam 800-1500 characters likho — apna experience, results aur value proposition detail mein batao.`});
+    if(!/\d+%|\d+\+|\d+ years|\d+ projects|\d+ clients/.test(overview.toLowerCase())) list.push({level:'warn', title:'Quantifiable results add karo', text:'Numbers use karo jaise "50+ projects delivered" ya "3 years experience" — yeh trust build karta hai.'});
+    const ctaWords = ['let\'s talk','contact me','message me','reach out'];
+    if(!ctaWords.some(w=>overview.toLowerCase().includes(w))) list.push({level:'warn', title:'Call-to-action missing', text:'Overview ke end mein ek clear CTA add karo, jaise "Message me to discuss your project."'});
+  }
+
+  // Skills
+  if(scores.skills>=70) list.push({level:'good', title:'Skills coverage achhi hai ✅', text:'Aapki skills category ke trending demand se match karti hain.'});
+  else {
+    if(skills.length<8) list.push({level:'warn', title:'Aur skills add karo', text:`Abhi sirf ${skills.length} skills hain. 10-15 relevant skills add karne se search visibility badhti hai.`});
+    const lowerSkills = skills.map(s=>s.toLowerCase());
+    const missing = cat.trendingSkills.filter(ts=>!lowerSkills.some(s=>s.includes(ts.toLowerCase())||ts.toLowerCase().includes(s))).slice(0,5);
+    if(missing.length) list.push({level:'bad', title:'Trending skills missing', text:`${cat.label} category mein yeh trending skills add karne se consider karo: ${missing.join(', ')}.`});
+  }
+
+  // Rate
+  if(rate>0){
+    const [lo,hi] = cat.rate[exp];
+    if(scores.rate>=90) list.push({level:'good', title:'Rate perfectly positioned hai ✅', text:`₹${rate}/hr ${cat.label} ke ${exp} level ke liye ideal range (₹${lo}-₹${hi}) mein hai.`});
+    else if(rate<lo) list.push({level:'warn', title:'Rate under-priced ho sakta hai', text:`Aapka rate ₹${rate}/hr hai, jabki ${exp} level ke liye recommended range ₹${lo}-₹${hi} hai. Undervaluing se profile ki perceived quality kam lagti hai.`});
+    else list.push({level:'warn', title:'Rate market se zyada hai', text:`₹${rate}/hr aapke experience level (${exp}) ke recommended range ₹${lo}-₹${hi} se upar hai. Agar strong portfolio/reviews nahi hain to yeh clients kam attract kar sakta hai.`});
+  } else {
+    list.push({level:'bad', title:'Rate set nahi kiya', text:'Apna hourly rate zaroor set karo taaki hum sahi positioning analysis de sakein.'});
+  }
+
+  // Keywords
+  if(scores.keywords<50) list.push({level:'bad', title:'Keyword density kam hai', text:`Title aur overview mein "${cat.label}" se related keywords ki kami hai — Upwork search algorithm keywords pe heavily depend karta hai.`});
+
+  const box = document.getElementById('suggestionsList');
+  box.innerHTML = '';
+  if(list.length===0){
+    box.innerHTML = `<div class="suggestion good"><span class="icon">🎉</span><div class="txt"><strong>Bahut badhiya!</strong><p>Aapki profile har parameter pe strong hai.</p></div></div>`;
+    return;
+  }
+  const iconMap = {good:'✅', warn:'⚠️', bad:'❌'};
+  list.forEach(item=>{
+    const div = document.createElement('div');
+    div.className = 'suggestion '+item.level;
+    div.innerHTML = `<span class="icon">${iconMap[item.level]}</span><div class="txt"><strong>${item.title}</strong><p>${item.text}</p></div>`;
+    box.appendChild(div);
+  });
+}
+
+// ---------- TITLE GENERATOR ----------
+function generateTitles(){
+  const catKey = document.getElementById('category').value;
+  const cat = CATEGORY_DATA[catKey];
+  const exp = document.getElementById('experience').value;
+  const aiMode = document.getElementById('titleAiToggle').checked;
+  const box = document.getElementById('titleSuggestions');
+
+  if(aiMode){
+    box.innerHTML = `<div style="display:flex;align-items:center;gap:10px;color:var(--text-dim);font-family:var(--font-mono);font-size:13px;"><span class="loader"></span> Claude AI se creative titles generate ho rahe hain...</div>`;
+    callClaudeAPI(buildTitlePrompt(cat, exp))
+      .then(text=>{
+        const lines = text.split('\n').map(l=>l.replace(/^[\d\.\-\*\s]+/, '').trim()).filter(l=>l.length>5).slice(0,5);
+        renderTitleCards(lines.length?lines:[text]);
+      })
+      .catch(err=>{
+        box.innerHTML = `<div class="suggestion bad"><span class="icon">⚠️</span><div class="txt"><strong>AI Analysis abhi available nahi hai</strong><p>Rule-based titles use kar rahe hain instead.</p></div></div>`;
+        renderTitleCards(ruleBasedTitles(cat, exp));
+      });
+  } else {
+    renderTitleCards(ruleBasedTitles(cat, exp));
+  }
+}
+
+function ruleBasedTitles(cat, exp){
+  const expWord = exp==='expert' ? 'Expert' : exp==='intermediate' ? 'Specialist' : 'Freelancer';
+  const topSkills = cat.trendingSkills.slice(0,3);
+  const templates = [
+    `${cat.label} ${expWord} | ${topSkills[0]} & ${topSkills[1]} Specialist`,
+    `${topSkills[0]} & ${topSkills[1]} ${expWord} | ${cat.label} That Delivers Results`,
+    `Top Rated ${cat.label} ${expWord} | ${topSkills.join(', ')}`,
+    `${cat.label} Professional | ${topSkills[0]}, ${topSkills[1]} & ${topSkills[2]}`,
+    `Certified ${cat.label} ${expWord} | Fast, Reliable & Detail-Oriented`
+  ];
+  return templates;
+}
+
+function renderTitleCards(titles){
+  const box = document.getElementById('titleSuggestions');
+  box.innerHTML = '';
+  titles.forEach(t=>{
+    const div = document.createElement('div');
+    div.className='title-card';
+    div.innerHTML = `<p>${escapeHtml(t)}</p><button class="btn btn-ghost btn-sm copy-btn" onclick="copyText('${escapeHtml(t).replace(/'/g,"\\'")}')">📋 Copy</button>`;
+    box.appendChild(div);
+  });
+}
+
+function copyText(text){
+  navigator.clipboard.writeText(text).then(()=>showToast('✅ Copy ho gaya!'));
+}
+
+// ---------- SKILLS GAP ----------
+function renderSkillsGap(){
+  const catKey = document.getElementById('category').value;
+  const cat = CATEGORY_DATA[catKey];
+  const box = document.getElementById('skillsGapResult');
+  const lowerSkills = skills.map(s=>s.toLowerCase());
+
+  let html = `<p style="font-family:var(--font-mono);font-size:12px;color:var(--cyan);margin-bottom:10px;letter-spacing:1px;">TRENDING SKILLS FOR ${cat.label.toUpperCase()}</p><div class="chip-input-wrap" style="margin-bottom:20px;">`;
+  cat.trendingSkills.forEach(ts=>{
+    const has = lowerSkills.some(s=>s.includes(ts.toLowerCase())||ts.toLowerCase().includes(s));
+    html += `<span class="chip ${has?'trend':'missing'}" onclick="addSkillFromGap('${ts.replace(/'/g,"\\'")}')">${has?'✓ ':'+ '}${ts}</span>`;
+  });
+  html += `</div><p style="color:var(--text-dim);font-size:13px;">🟢 Green = aapki profile mein hai · 🔴 Red = missing (click karke add karo)</p>`;
+  box.innerHTML = html;
+}
+
+function addSkillFromGap(skill){
+  addSkill(skill);
+  showToast(`✅ "${skill}" skills mein add ho gaya`);
+  renderSkillsGap();
+}
+
+// ---------- RATE BENCHMARK ----------
+function renderRateBenchmark(){
+  const catKey = document.getElementById('category').value;
+  const cat = CATEGORY_DATA[catKey];
+  const exp = document.getElementById('experience').value;
+  const rate = parseFloat(document.getElementById('hourlyRate').value) || 0;
+  const box = document.getElementById('rateBenchResult');
+
+  const allRates = [cat.rate.entry[0], cat.rate.entry[1], cat.rate.intermediate[0], cat.rate.intermediate[1], cat.rate.expert[0], cat.rate.expert[1]];
+  const minR = Math.min(...allRates), maxR = Math.max(...allRates, rate);
+  const pos = rate>0 ? Math.min(100, Math.max(0, ((rate-minR)/(maxR-minR))*100)) : null;
+
+  let html = `<div class="rate-scale">
+    <div class="rate-track"></div>
+    ${pos!==null ? `<div class="rate-marker" style="left:${pos}%;" data-label="₹${rate.toLocaleString('en-IN')}"></div>` : ''}
+  </div>
+  <div class="rate-labels"><span>₹${minR.toLocaleString('en-IN')}</span><span>₹${maxR.toLocaleString('en-IN')}</span></div>
+  <div class="grid-3" style="margin-top:24px;">
+    ${['entry','intermediate','expert'].map(lvl=>{
+      const [lo,hi]=cat.rate[lvl];
+      const active = lvl===exp;
+      return `<div class="panel" style="padding:16px;margin:0;${active?'border-color:var(--cyan);box-shadow:0 0 16px rgba(0,255,240,0.15);':''}">
+        <div style="font-family:var(--font-mono);font-size:11px;color:${active?'var(--cyan)':'var(--text-dim)'};text-transform:uppercase;margin-bottom:6px;">${lvl}${active?' (YOU)':''}</div>
+        <div style="font-family:var(--font-head);font-size:18px;color:var(--text-main);">₹${lo.toLocaleString('en-IN')} - ₹${hi.toLocaleString('en-IN')}</div>
+        <div style="font-size:12px;color:var(--text-faint);">per hour</div>
+      </div>`;
+    }).join('')}
+  </div>`;
+  box.innerHTML = html;
+}
+
+// ---------- HISTORY ----------
+function saveToHistory(result){
+  let history = JSON.parse(localStorage.getItem('upwork_optimizer_history') || '[]');
+  history.unshift({
+    date: new Date().toLocaleString('en-IN'),
+    title: result.title || '(untitled)',
+    category: result.cat.label,
+    score: result.overall
+  });
+  history = history.slice(0, 20);
+  localStorage.setItem('upwork_optimizer_history', JSON.stringify(history));
+}
+
+function renderHistory(){
+  const history = JSON.parse(localStorage.getItem('upwork_optimizer_history') || '[]');
+  const body = document.getElementById('historyBody');
+  const empty = document.getElementById('historyEmpty');
+  body.innerHTML = '';
+  if(history.length===0){ empty.style.display='block'; return; }
+  empty.style.display='none';
+  history.forEach((h,i)=>{
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td>${h.date}</td><td>${escapeHtml(h.title.slice(0,40))}</td><td>${h.category}</td><td style="color:${h.score>=70?'var(--green)':h.score>=45?'var(--amber)':'var(--red)'}">${h.score}</td><td><span class="del" onclick="deleteHistoryItem(${i})">🗑️</span></td>`;
+    body.appendChild(tr);
+  });
+}
+
+function deleteHistoryItem(i){
+  let history = JSON.parse(localStorage.getItem('upwork_optimizer_history') || '[]');
+  history.splice(i,1);
+  localStorage.setItem('upwork_optimizer_history', JSON.stringify(history));
+  renderHistory();
+}
+
+// ---------- DRAFT SAVE / LOAD ----------
+function saveDraft(){
+  const draft = {
+    category: document.getElementById('category').value,
+    experience: document.getElementById('experience').value,
+    title: titleEl.value,
+    overview: overviewEl.value,
+    skills: skills,
+    rate: document.getElementById('hourlyRate').value,
+    outputLang: document.getElementById('outputLang').value
+  };
+  localStorage.setItem('upwork_optimizer_draft', JSON.stringify(draft));
+  showToast('💾 Draft save ho gaya!');
+}
+
+function loadDraft(){
+  const raw = localStorage.getItem('upwork_optimizer_draft');
+  if(!raw){ showToast('⚠️ Koi saved draft nahi mila'); return; }
+  const d = JSON.parse(raw);
+  document.getElementById('category').value = d.category || 'webdev';
+  document.getElementById('experience').value = d.experience || 'intermediate';
+  titleEl.value = d.title || '';
+  overviewEl.value = d.overview || '';
+  skills = d.skills || [];
+  renderChips();
+  document.getElementById('hourlyRate').value = d.rate || '';
+  document.getElementById('outputLang').value = d.outputLang || 'hinglish';
+  titleEl.dispatchEvent(new Event('input'));
+  overviewEl.dispatchEvent(new Event('input'));
+  showToast('📂 Draft load ho gaya!');
+}
+
+function exportProfile(){
+  if(!titleEl.value && !overviewEl.value){ showToast('⚠️ Pehle profile fill karo'); return; }
+  const catLabel = CATEGORY_DATA[document.getElementById('category').value].label;
+  const content = `UPWORK PROFILE — ${catLabel}
+Generated by IncomeAIHub Upwork Profile Optimizer Pro
+${new Date().toLocaleString('en-IN')}
+========================================
+
+TITLE:
+${titleEl.value}
+
+OVERVIEW:
+${overviewEl.value}
+
+SKILLS:
+${skills.join(', ')}
+
+HOURLY RATE: ₹${document.getElementById('hourlyRate').value || 'N/A'}/hr
+EXPERIENCE LEVEL: ${document.getElementById('experience').value}
+
+${lastAnalysis ? `OVERALL SCORE: ${lastAnalysis.overall}/100` : ''}
+`;
+  const blob = new Blob([content], {type:'text/plain'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'upwork-profile-optimized.txt';
+  a.click();
+  URL.revokeObjectURL(url);
+  showToast('⬇️ Profile export ho gayi!');
+}
+
+// ---------- AI (CLAUDE API) INTEGRATION ----------
+async function callClaudeAPI(prompt){
+  const response = await fetch("https://api.anthropic.com/v1/messages", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({
+      model: "claude-sonnet-4-6",
+      max_tokens: 1000,
+      messages: [{role:"user", content: prompt}]
+    })
+  });
+  const data = await response.json();
+  const textBlocks = (data.content || []).filter(c=>c.type==='text').map(c=>c.text);
+  return textBlocks.join('\n');
+}
+
+function buildTitlePrompt(cat, exp){
+  const lang = document.getElementById('outputLang').value;
+  const langInstruction = lang==='hindi' ? 'Respond in Hindi (Devanagari script).' : lang==='hinglish' ? 'Respond in Hinglish (Hindi-English mix, Roman script).' : 'Respond in English.';
+  return `You are an Upwork profile optimization expert for Indian freelancers. Generate 5 highly optimized, compelling Upwork profile titles (max 70 characters each) for a ${exp}-level freelancer in the "${cat.label}" category with skills like ${cat.trendingSkills.slice(0,5).join(', ')}. ${langInstruction} Return ONLY the 5 titles, one per line, no numbering, no extra commentary.`;
+}
+
+function buildAnalysisPrompt(result){
+  const lang = document.getElementById('outputLang').value;
+  const langInstruction = lang==='hindi' ? 'Respond in Hindi (Devanagari script).' : lang==='hinglish' ? 'Respond in Hinglish (Hindi-English mix, Roman script).' : 'Respond in English.';
+  return `You are an expert Upwork profile consultant helping an Indian freelancer in the "${result.cat.label}" category (${result.exp} level) win more clients.
+
+Current Title: "${result.title}"
+Current Overview: "${result.overview}"
+Skills: ${skills.join(', ')}
+Hourly Rate: ₹${result.rate}/hr
+
+Provide:
+1. A rewritten, improved profile title (max 70 chars)
+2. A rewritten, improved overview (400-600 words) that is persuasive, keyword-rich, and client-focused
+3. 5 specific, actionable improvement tips beyond what a basic checklist would say
+
+${langInstruction} Format clearly with headers "REWRITTEN TITLE:", "REWRITTEN OVERVIEW:", and "TOP 5 TIPS:".`;
+}
+
+async function runAIAnalysis(){
+  if(!lastAnalysis){ showToast('⚠️ Pehle "Analyze Profile" chalao'); return; }
+  const btn = document.getElementById('aiAnalyzeBtn');
+  const box = document.getElementById('aiResultBox');
+  btn.disabled = true;
+  box.innerHTML = `<div class="ai-box"><span class="loader"></span> Claude AI analysis kar raha hai, thoda wait karo...</div>`;
+
+  try{
+    const text = await callClaudeAPI(buildAnalysisPrompt(lastAnalysis));
+    box.innerHTML = `<div class="ai-box"><h4>🤖 AI-POWERED SUGGESTIONS</h4>${escapeHtml(text)}</div>`;
+  }catch(err){
+    box.innerHTML = `<div class="suggestion bad"><span class="icon">⚠️</span><div class="txt"><strong>AI Analysis abhi available nahi hai</strong><p>Network issue ya API limit ho sakta hai. Rule-based suggestions upar available hain, unhe follow karo.</p></div></div>`;
+  }
+  btn.disabled = false;
+}
+
+// ---------- TOAST ----------
+function showToast(msg){
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'), 2600);
+}
+
+// ---------- INIT ----------
+window.addEventListener('load', ()=>{
+  renderChips();
+  renderHistory();
+});
+</script>
+</body>
+</html>
